@@ -1,9 +1,9 @@
 function Footer() {
     return (
         <>
-            <p><a>Facebook</a></p>
-            <p><a>twitter</a></p>
-            <p><a>Linkden</a></p>
+            <p>Facebook</p>
+            <p>twitter</p>
+            <p>Linkden</p>
             <div>author</div>
         </>
     )
