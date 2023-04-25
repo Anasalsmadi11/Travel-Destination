@@ -1,4 +1,7 @@
+
 import Header from './components/header/Header';
+// import logo from './logo.svg';
+
 import Home from './components/home/Home'
 import Tours from './components/tours/Tours'
 import { Routes , Route } from 'react-router-dom'
