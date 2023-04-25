@@ -1,0 +1,6 @@
+.main{
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+}

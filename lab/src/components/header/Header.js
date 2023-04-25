@@ -1,4 +1,5 @@
-import './Header.css'
+// import './Header.css'
+import Navbar from "../Navbar/Navbar";
 
 
 function Header() {
@@ -6,6 +7,9 @@ function Header() {
     return (
         <>
             <h1 style={{ color : color}}>Destinations</h1>
+
+        <Navbar/>
+
         </>
     )
 }
