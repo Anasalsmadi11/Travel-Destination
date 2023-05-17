@@ -1,20 +1,19 @@
 import './Home.css'
-// import Header from '../header/Header';
-import Tours from '../tours/Tours'
-import Footer from '../footer/Footer';
+import Tours from "../tours/Tours"
+import Header from "../header/Header"
+import Footer from "../footer/Footer"
+const data = require ('./../../data/db.json');
 
-// const data = require('../../data/db.json')
 
-function Home(props) {
+function Home() {
     return (
         <>
-
-        {/* <Header /> */}
-        <Tours />
-        <Footer/>
+            <Header />
+            <Tours arrayData={data} />
+            <Footer />
 
         </>
+
     )
 }
-
-export default Home
+export default Home;

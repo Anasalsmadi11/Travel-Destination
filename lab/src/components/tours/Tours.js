@@ -1,25 +1,22 @@
+
 import './Tours.css'
-import Tour from './tour/Tour'
-const data = require('../../data/db.json')
+import Tour from "./tour/Tour.js";
+import React from "react";
 
-function Tours(){
-  // const[city, setCity]=useState()
-    return(
+function Tours(props) {
+    return (
         <>
-        {
-          data.map((item,i)=>{
-            return(
-              <div key={i}>
+            <h2>Tours list</h2>
+            {
+                props.arrayData.map((item, i) => {
+                    return (
+                        <Tour tour={item} />
+                    )
+                })
+            }
 
-                <Tour city={item}/>
-              </div>
-            )
-          })
-        }
-        {/* <Tour imag={data.name}/> */}
-       
+
         </>
     )
 }
-
-export default Tours 
+export default Tours;
