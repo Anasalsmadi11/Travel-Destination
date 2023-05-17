@@ -9,10 +9,15 @@ function Tours(){
         {
           data.map((item,i)=>{
             return(
-              <Tour city={item}/>
+              <div key={i}>
+
+                <Tour city={item}/>
+              </div>
             )
           })
         }
+        {/* <Tour imag={data.name}/> */}
+       
         </>
     )
 }
