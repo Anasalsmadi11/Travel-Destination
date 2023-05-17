@@ -4,6 +4,7 @@ function Tours(props){
         <>
            {
              props.arrayData.map((item,i) => {
+              console.log(item.image)
                return(
                <div key={i}>
                     <h3>{item.name}</h3>
