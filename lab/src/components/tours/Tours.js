@@ -1,7 +1,12 @@
+import './Tours.css'
+import Tour from './tour/Tour'
+const data = require('../../data/db.json')
 
-function Tours(props){
+function Tours(){
+  // const[city, setCity]=useState()
     return(
         <>
+
            {
              props.arrayData.map((item,i) => {
               console.log(item.image)
@@ -16,6 +21,7 @@ function Tours(props){
                 )
              })
            }
+
         </>
     )
 }
