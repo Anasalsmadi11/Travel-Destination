@@ -1,16 +1,15 @@
-// import './Header.css'
-import Navbar from "../Navbar/Navbar";
-
-
-function Header() {
-    let color="purple"
+import './Header.css'
+import Navbar from '../Navbar/Navbar';
+function Header(props) {
     return (
         <>
-            <h1 style={{ color : color}}>Destinations</h1>
-
-        <Navbar/>
-
+<div className='title'>
+         <h1> Tours</h1>
+         <Navbar/>
+       
+        </div>
         </>
     )
 }
+
 export default Header;
